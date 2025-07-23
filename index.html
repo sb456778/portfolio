@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./download.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header>
+  <h1>  <a href="#" class="logo" >Soban</a></h1>
+    <nav>
+        <a href="#home" class="active">Home</a>
+        <a href="#education" class="eduction" >Education</a>
+        <a href="#" class="btt" >Skills</a>
+        <a href="#" class="dtdt" >Contact</a>
+     
+    </nav>
+</header>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<section id="home" >
+<div class="container">
+    <div class="home-work">
+       <blockquote> <h1 class="et" >Hi,It's <span class="two" >portfolio</span></h1>
+<div class="type-write">
+  <h1>I'm <span id="impor" >developer</span></h1>
+</div>
+<div class="ko">
+    <h4>Yet bed any for travelling assistance indulgence unpleasing. Not<br>thoughts all exercise blessing. Indulgence way everything joy<br> alteration boisterous the<br>attachment.</h4>
+</div>
+<div class="btn">
+   
+    <div class="social-icon">
+        <a  target="_blank" href="https://github.com/"><i class="fa-brands fa-github" ></i></a>
+        <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook" ></i></a>
+        <a target="_blank" href=""><i class="fa-brands font-awesome" ></i></a>
+        <a target="_blank" href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+    </div> 
+    <button id="sendMessageButton" >Hire Me</button>
+     <input type="text" id="phoneNumber" placeholder="Enter Phone Number">
+      <script>
+    document.getElementById('sendMessageButton').addEventListener('click', function() {
+      // User input number
+      const phoneNumber = document.getElementById('phoneNumber').value.trim();
+
+      // Regular Expression for validating Pakistan phone numbers
+      // Valid numbers start with +92 or 92 and followed by 10 digits.
+      const pakistanPhoneRegex = /^(?:\+92|92)?\d{10}$/;
+
+      // Error message element
+      const errorMessage = document.getElementById('errorMessage');
+
+      // Validate phone number
+      if (pakistanPhoneRegex.test(phoneNumber)) {
+        // Remove any leading "+" for WhatsApp link
+        const cleanPhoneNumber = phoneNumber.replace(/^\+/, "");
+
+        // Predefined message
+        const message = "done connecting for soban sheikh";
+
+        // WhatsApp link (change the phone number here)
+        const whatsappLink = `https://wa.me/${cleanPhoneNumber}?text=${encodeURIComponent(message)}`;
+
+        // Open WhatsApp chat
+        window.open(whatsappLink, '_blank');
+        errorMessage.style.display = 'none'; // Hide error message
+      } else {
+        // Show error if phone number is invalid
+        errorMessage.style.display = 'block';
+      }
+    });
+  </script>
+</div>
+
+    </blockquote></div>
+    <div class="home-img">
+        <img src="./OIP.webp" width="936" alt="">
+
+        
+    </div>
+</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <section id="education">
+    <div class="next-page">
+      <div class="text">
+        <div class="type-write">
+  <blockquote><h1> My education is<br> <span id="impor" >lingo school</span></h1><br><br>
+  <p class="implument" >I study in 4th grade.<br> I am 8 years old.</p>
+  </blockquote>
+</div>
+      </div>
+      <div class="next-img"> 
+        <img src="./education.jpeg" width="936"  alt="">
+      </div>
+      
+    </div>
+
+  </section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <section id="Skills">
+   <div class="3th-page">
+    <div class="texx"></div>
+   </div> 
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
